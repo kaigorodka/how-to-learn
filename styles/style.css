@@ -8,14 +8,6 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
-p,
-h1,
-h2,
-h3,
-ul {
-  margin: 0;
-  padding: 0;
-}
 .header {
   height: 100vh;
   min-height: 600px;
@@ -62,11 +54,10 @@ ul {
   width: 765px;
   height: 608px;
   z-index: 3;
+  object-fit: fill;
+  object-position: 50% 50%;
 }
 .header__title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-left: 64px;
   z-index: 4;
   width: 730px;
@@ -91,7 +82,6 @@ ul {
 /* и элемента с модификатором вида ключ-значение */
 .description {
   padding-top: 100px;
-  background-color: #f2f2f2;
 }
 .two-columns {
   margin: auto;
@@ -106,21 +96,19 @@ ul {
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
-  margin: 0;
-  align-items: stretch;
 }
-.main__text {
+.two-columns__main-text {
   display: flex;
   flex-direction: column;
   margin: 0px;
   width: 1000px;
 }
-.main_text_paragraph__span-accent {
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
 }
-.main_text_paragraph {
+.two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   margin-bottom: 30px;
@@ -133,7 +121,6 @@ ul {
   padding-top: 100px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #f2f2f2;
 }
 .section-title {
   margin: auto;
@@ -173,6 +160,7 @@ ul {
 }
 .table__text {
   margin-top: 20px;
+  margin-bottom: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -282,7 +270,7 @@ ul {
   overflow: hidden;
   z-index: 1;
 }
-.triangle {
+.kaufman__triangle {
   top: 0;
   right: -210px;
   background-image: url(../images/kaufman-triangle.svg);
@@ -298,10 +286,11 @@ ul {
   padding-top: 60px;
   padding-bottom: 40px;
   min-height: 250px;
+  display: flex;
+  justify-content: space-between;
 }
 .footer__columns {
   width: 90%;
-  min-height: 250px;
   margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
@@ -328,16 +317,19 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0;
 }
 .footer__column_content_info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 0;
 }
 .footer__column_content_social {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 0;
 }
 .footer__social-icon {
   margin-right: 5px;
