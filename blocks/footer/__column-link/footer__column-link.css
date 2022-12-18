@@ -1,0 +1,9 @@
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+.footer__column-link:nth-of-type(3n) {
+  margin-bottom: 16px;
+}
