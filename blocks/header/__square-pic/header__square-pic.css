@@ -5,8 +5,5 @@
   top: 64px;
   right: 0;
   background-color: #2f80ed;
-  z-index: 2;
-  animation-name: rotation;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
+  z-index: 1;
 }
