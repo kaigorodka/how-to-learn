@@ -6,13 +6,9 @@
     transform: rotate(360deg);
   }
 }
-.header__square-pic {
+.rotation {
   animation-name: rotation;
   animation-duration: 20s;
   animation-iteration-count: infinite;
-}
-.kaufman__triangle {
-  animation-name: rotation;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
